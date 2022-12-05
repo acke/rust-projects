@@ -1,13 +1,11 @@
 fn main() {
 
-    print_hello_world()
+    println! ("{}", print_hello_world())
 
 }
 
-fn print_hello_world() {
+fn print_hello_world() -> &'static str {
 
-    let pair = ("Hello World", 10);
-    
-    println!("{}", pair.0);
-    println!("{}", pair.1);
+    let x = "Hello World";
+    x
 }
